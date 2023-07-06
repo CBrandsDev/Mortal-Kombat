@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style: none;
+}
+
 body {
     font-family: 'Mortal-Kombat-MK11', sans-serif;
 }
