@@ -23,7 +23,7 @@ body {
 }
 body::before {
     content: '';
-    background-image: url(../images/bg-mk11.jpg);
+    background-image: url(../images/bg-3.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -34,6 +34,7 @@ body::before {
     opacity: 0.7;
 }
 .header {
+    max-height: 1000px;
     display: flex;
     justify-content: center;
 }
