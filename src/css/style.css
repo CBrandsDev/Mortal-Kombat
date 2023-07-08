@@ -23,7 +23,7 @@ body {
 }
 body::before {
     content: '';
-    background-image: url(../images/bg-3.gif);
+    background-image: url(../images/bg-mk11.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
