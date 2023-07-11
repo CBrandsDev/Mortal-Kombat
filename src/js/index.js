@@ -6,9 +6,10 @@ characters.forEach(character => {
             window.scrollTo({top: 0, beheavior:'smooth'});
         }
 
-        removeCharacterSelection();
+        
         addCharacterBorder(character);
-       
+        removeCharacterSelection(character);
+        
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
@@ -33,31 +34,42 @@ function replaceBigCharacter(character) {
     characterImage.src = `./src/images/${characterId}.gif`;
 }
 
-function removeCharacterSelection() {
-    const selectedCharacter = document.querySelector('.scorpion');
-    const characterId = selectedCharacter.attributes.id.value;
-    selectedCharacter.classList.remove('scorpion');
-    selectedCharacter.classList.remove('subzero');
-    selectedCharacter.classList.remove('johhnycage');
-    selectedCharacter.classList.remove('scorpion');
-    selectedCharacter.classList.remove('scorpion');
-    selectedCharacter.classList.remove('scorpion');
-    selectedCharacter.classList.remove('scorpion');
-    selectedCharacter.classList.remove('scorpion');
+function removeCharacterSelection(character) {
+    
+    
+    
 }
 function addCharacterBorder(character) {
-    character.classList.add('scorpion')
-    
+    const characterId = character.attributes.id.value;
+    const selectedCharacter = document.querySelector('.character');
+    console.log(characterId);
+    if (characterId == 'scorpion') {
+        character.classList.add('scorpion')
+    }
+    if (characterId == 'subzero') {
+        character.classList.add('subzero')
+    }
+    if (characterId == 'johnny-cage') {
+        character.classList.add('johnny')
+    }
+    if (characterId == 'liu-kang') {
+        character.classList.add('liukang')
+    }
+    if (characterId == 'reptile') {
+        character.classList.add('reptile')
+    }
+    if (characterId == 'raiden') {
+        character.classList.add('raiden')
+    }
+    if (characterId == 'kung-lao') {
+        character.classList.add('kunglao')
+    }
+    if (characterId == 'jax') {
+        character.classList.add('jax')
+    }
    
-    
-    
-    // if (characterId == 'scorpion') {
-    //     character.classList.add('scorpion')
-    // }
-    // if (characterId == 'subzero') {
-    //     character.classList.add('subzero')
-    // }
-     
+   
+
 }
 
 

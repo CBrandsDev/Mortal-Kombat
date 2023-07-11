@@ -72,15 +72,32 @@ body::before {
     width: 220px;
     height: 320px;
 }
+.characters-list .character.hidden {
+    box-shadow: none;
+}
 .characters-list .character.scorpion {
-    box-shadow: 0px 0px 24px 5px yellow;
-    
+    box-shadow: 0px 0px 24px 5px yellow;    
 }
 .characters-list .character.subzero {
-    box-shadow: 0px 0px 24px 5px rgb(2, 129, 248);
+    box-shadow: 0px 0px 24px 5px rgb(0, 132, 255);
 }
-.characters-list .character.johnnycage {
+.characters-list .character.johnny {
     box-shadow: 0px 0px 24px 5px rgb(16, 204, 31);
+}
+.characters-list .character.liukang {
+    box-shadow: 0px 0px 24px 5px rgb(238, 121, 11);
+}
+.characters-list .character.reptile {
+    box-shadow: 0px 0px 24px 5px rgb(12, 121, 21);
+}
+.characters-list .character.raiden {
+    box-shadow: 0px 0px 24px 5px rgb(0, 174, 255);
+}
+.characters-list .character.kunglao {
+    box-shadow: 0px 0px 24px 5px rgb(9, 2, 94);
+}
+.characters-list .character.jax {
+    box-shadow: 0px 0px 24px 5px rgb(76, 80, 77);
 }
 .selected-character {
     text-align: center;
