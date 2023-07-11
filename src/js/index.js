@@ -6,10 +6,8 @@ characters.forEach(character => {
             window.scrollTo({top: 0, beheavior:'smooth'});
         }
 
-        
+        removeCharacterSelection();
         addCharacterBorder(character);
-        removeCharacterSelection(character);
-        
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
@@ -34,10 +32,10 @@ function replaceBigCharacter(character) {
     characterImage.src = `./src/images/${characterId}.gif`;
 }
 
-function removeCharacterSelection(character) {
-    
-    
-    
+function removeCharacterSelection() {
+    characters.forEach(character => {
+        character.classList.remove('scorpion', 'subzero', 'johnny', 'liukang', 'reptile', 'raiden', 'kunglao', 'jax')
+    })
 }
 function addCharacterBorder(character) {
     const characterId = character.attributes.id.value;
