@@ -7,10 +7,13 @@ characters.forEach(character => {
         }
 
         removeCharacterSelection();
-        character.classList.add('selected');
+        addCharacterBorder(character);
+       
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
+        
+
     })
 })
 
@@ -31,6 +34,31 @@ function replaceBigCharacter(character) {
 }
 
 function removeCharacterSelection() {
-    const selectedCharacter = document.querySelector('.selected');
-    selectedCharacter.classList.remove('selected');
+    const selectedCharacter = document.querySelector('.scorpion');
+    const characterId = selectedCharacter.attributes.id.value;
+    selectedCharacter.classList.remove('scorpion');
+    selectedCharacter.classList.remove('subzero');
+    selectedCharacter.classList.remove('johhnycage');
+    selectedCharacter.classList.remove('scorpion');
+    selectedCharacter.classList.remove('scorpion');
+    selectedCharacter.classList.remove('scorpion');
+    selectedCharacter.classList.remove('scorpion');
+    selectedCharacter.classList.remove('scorpion');
 }
+function addCharacterBorder(character) {
+    character.classList.add('scorpion')
+    
+   
+    
+    
+    // if (characterId == 'scorpion') {
+    //     character.classList.add('scorpion')
+    // }
+    // if (characterId == 'subzero') {
+    //     character.classList.add('subzero')
+    // }
+     
+}
+
+
+

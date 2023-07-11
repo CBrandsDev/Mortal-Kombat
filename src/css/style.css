@@ -72,8 +72,15 @@ body::before {
     width: 220px;
     height: 320px;
 }
-.characters-list .character.selected {
+.characters-list .character.scorpion {
     box-shadow: 0px 0px 24px 5px yellow;
+    
+}
+.characters-list .character.subzero {
+    box-shadow: 0px 0px 24px 5px rgb(2, 129, 248);
+}
+.characters-list .character.johnnycage {
+    box-shadow: 0px 0px 24px 5px rgb(16, 204, 31);
 }
 .selected-character {
     text-align: center;
