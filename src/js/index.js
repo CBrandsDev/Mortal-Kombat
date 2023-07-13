@@ -5,14 +5,11 @@ characters.forEach(character => {
         if(window.innerWidth < 450) {
             window.scrollTo({top: 0, beheavior:'smooth'});
         }
-
         removeCharacterSelection();
         addCharacterBorder(character);
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
-        
-
     })
 })
 
@@ -65,9 +62,6 @@ function addCharacterBorder(character) {
     if (characterId == 'jax') {
         character.classList.add('jax')
     }
-   
-   
-
 }
 
 
