@@ -1,4 +1,7 @@
 const characters = document.querySelectorAll('.character');
+const main = document.querySelector('.characters')
+const description = document.querySelector('.selected-character')
+const fatalitys = document.querySelector('.animation')
 
 characters.forEach(character => {
     character.addEventListener('mouseenter', () => {
@@ -10,6 +13,14 @@ characters.forEach(character => {
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
+    })
+})
+
+characters.forEach(character => {
+    character.addEventListener('click', () => {
+        description.classList.add('hidden')
+        main.setAttribute('id', 'hidden')
+        fatalitys.classList.remove('hidden')
     })
 })
 
