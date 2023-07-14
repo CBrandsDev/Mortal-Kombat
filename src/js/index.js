@@ -2,6 +2,7 @@ const characters = document.querySelectorAll('.character');
 const main = document.querySelector('.characters')
 const description = document.querySelector('.selected-character')
 const fatalitys = document.querySelector('.animation')
+const backBtn = document.querySelector('.back')
 
 characters.forEach(character => {
     character.addEventListener('mouseenter', () => {
@@ -21,6 +22,11 @@ characters.forEach(character => {
         description.classList.add('hidden')
         main.setAttribute('id', 'hidden')
         fatalitys.classList.remove('hidden')
+    })
+    backBtn.addEventListener('click', () => {
+        description.classList.remove('hidden')
+        main.setAttribute('id', '')
+        fatalitys.classList.add('hidden')
     })
 })
 
