@@ -3,6 +3,7 @@ const main = document.querySelector('.characters')
 const description = document.querySelector('.selected-character')
 const fatalitys = document.querySelector('.animation')
 const backBtn = document.querySelector('.back')
+const fatalityGif = document.querySelector('.fatality')
 
 characters.forEach(character => {
     character.addEventListener('mouseenter', () => {
@@ -14,6 +15,7 @@ characters.forEach(character => {
         replaceBigCharacter(character);
         replaceCharacterName(character);
         replaceCharacterDescription(character);
+        charactersFatalitys (character)
     })
 })
 
@@ -29,6 +31,13 @@ characters.forEach(character => {
         fatalitys.classList.add('hidden')
     })
 })
+
+function charactersFatalitys (character) {
+    const characterId = character.attributes.id.value;
+    fatalityGif.src = `./src/images/fatality-${characterId}.gif`
+    const fatalityName = document.querySelector('.character-fatality')
+    fatalityName.innerText = character.getAttribute('data-name') +  ' Fatality';
+    }
 
 function replaceCharacterDescription(character) {
     const characterDescription = document.getElementById('character-description');
@@ -54,7 +63,6 @@ function removeCharacterSelection() {
 function addCharacterBorder(character) {
     const characterId = character.attributes.id.value;
     const selectedCharacter = document.querySelector('.character');
-    console.log(characterId);
     if (characterId == 'scorpion') {
         character.classList.add('scorpion')
     }
