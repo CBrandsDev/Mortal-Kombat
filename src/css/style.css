@@ -21,6 +21,7 @@ body {
     font-family: 'Mortal-Kombat-MK11', sans-serif;
     background: black;
     color: white;
+    height: 100vh;
 }
 body::before {
     content: '';
