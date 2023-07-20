@@ -4,6 +4,7 @@ const description = document.querySelector('.selected-character')
 const fatalitys = document.querySelector('.animation')
 const backBtn = document.querySelector('.back')
 const fatalityGif = document.querySelector('.fatality')
+const opa = '1'
 
 characters.forEach(character => {
     character.addEventListener('mouseenter', () => {
